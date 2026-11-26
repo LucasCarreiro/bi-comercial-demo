@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14173c"><title>BI Comercial Demo · Inteligência comercial</title><link rel="icon" href="assets/logo.svg"><link rel="stylesheet" href="css/app.css"><link rel="stylesheet" href="css/customer-results.css"><link rel="stylesheet" href="css/print-report.css"><link rel="stylesheet" href="css/representative-map.css"><link rel="stylesheet" href="css/representative-results.css"><link rel="stylesheet" href="css/representative-presentation.css"><link rel="stylesheet" href="css/representative-intro.css"><link rel="stylesheet" href="css/experience.css"></head>
+<body>
+<a class="skip" href="#content">Ir para o conteúdo</a>
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="#dashboard" aria-label="BI Comercial Demo, início"><img src="assets/logo.svg" alt="BI Comercial Demo" width="164" height="82"><span>Inteligência comercial</span></a>
+  <p class="nav-label">Análise comercial</p>
+  <nav aria-label="Navegação principal">
+    <button data-view="dashboard" class="nav-item active"><span class="nav-icon">▦</span>Dashboard principal</button>
+    <button data-view="company" class="nav-item"><span class="nav-icon">▧</span>Resultado da empresa</button>
+    <button data-view="top" class="nav-item"><span class="nav-icon">◇</span>Top Varejistas</button>
+    <button data-view="networks" class="nav-item"><span class="nav-icon">▥</span>Grandes redes</button>
+    <button data-view="goals" class="nav-item"><span class="nav-icon">◎</span>Metas Top Varejistas</button>
+    <button data-view="presentation" class="nav-item"><span class="nav-icon">▻</span>Apresentação ao cliente</button>
+    <button data-view="representatives" class="nav-item"><span class="nav-icon">◈</span>Resultados por representante</button>
+    <button data-view="no-orders" class="nav-item"><span class="nav-icon">⌕</span>Clientes não visitados</button>
+    <button data-view="indicadores" class="nav-item"><span class="nav-icon">▤</span>Indicadores</button>
+    <button data-view="registry" class="nav-item"><span class="nav-icon">☷</span>Cadastros</button>
+    <button data-view="simulador-top" class="nav-item"><span class="nav-icon">＋</span>Simulador de Pedido</button>
+  </nav>
+  <span id="save-indicator" hidden aria-hidden="true"></span>
+</aside>
+<div class="workspace">
+  <header class="topbar"><div class="topbar-heading"><button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button><div><span class="breadcrumb">Demo / Comercial</span><h1 id="page-title">Dashboard principal</h1></div></div><div class="topbar-actions"><div id="data-status" class="data-status"><span id="topbar-status" class="status-chip">Dados fictícios</span><span id="connection-status" class="connection-status" data-state="pending" role="status">Carregando</span></div><label class="year-control" id="year-control" hidden>Ano<select id="year" aria-label="Ano da análise"></select></label><button id="unit-toggle" class="unit-toggle" aria-label="Alternar entre reais e fardos" aria-pressed="true" hidden><span data-metric="sales">R$</span><b aria-hidden="true">⇆</b><span data-metric="fardos" class="chosen">Fardos</span></button><button class="button button-light refresh" id="refresh" title="Atualizar dados"><span aria-hidden="true">↻</span> Atualizar</button></div></header>
+  <main id="content" tabindex="-1">
+    <div id="global-notice" class="notice" role="status" hidden></div>
+    <section id="frame-view" class="frame-view"></section>
+    <section id="analysis-view" class="analysis-page" hidden>
+      <div class="page-intro"><div><h2 id="analysis-title">Acompanhamento Top Varejista</h2></div><button class="button button-primary" id="manage-list">Gerenciar participantes <span aria-hidden="true">↗</span></button></div>
+      <div class="analysis-toolbar"><div class="search-wrap"><span aria-hidden="true">⌕</span><input id="entity-search" type="search" placeholder="Pesquisar cliente, cidade ou código" aria-label="Pesquisar cliente, cidade ou código"></div><button class="button button-light" id="clear-client-filter" disabled>Limpar filtro</button><button class="button button-light" id="analysis-print" disabled>Imprimir · Fardos + R$</button><div class="company-date-controls" id="company-date-controls" hidden><label>Início<input id="company-date-start" type="date" aria-label="Data inicial do resultado da empresa"></label><label>Fim<input id="company-date-end" type="date" aria-label="Data final do resultado da empresa"></label><button type="button" class="button button-light" id="company-date-apply">Filtrar datas</button><button type="button" class="button button-light" id="company-date-clear" disabled>Limpar datas</button></div><span id="coverage-status" class="coverage-status" aria-live="polite">Aguardando histórico</span></div>
+      <div id="loading-panel" class="loading-panel" role="status" hidden><span class="spinner"></span><div><strong>Consultando o histórico mensal</strong><p id="loading-label">Preparando consultas…</p></div><progress id="history-progress" max="12" value="0" aria-label="Progresso das consultas"></progress></div>
+      <div id="history-errors" class="notice warning" hidden></div>
+      <div id="analysis-content"></div>
+    </section>
+    <section id="customer-results-view" class="operations-page" hidden><div id="customer-results-content"></div></section>
+    <section id="no-orders-view" class="operations-page" hidden><div id="no-orders-content"></div></section>
+    <section id="representatives-view" class="representatives-page" hidden><div id="representatives-content"></div></section>
+    <section id="registry-view" class="registry-page" hidden>
+      <div class="page-intro"><div><span class="eyebrow">Gestão da carteira</span><h2>Cadastros comerciais</h2></div><div class="button-row"><button class="button button-light" id="import-json">Importar JSON</button><button class="button button-light" id="export-json">Baixar cópia</button><input type="file" id="import-file" accept="application/json,.json" hidden></div></div>
+      <div class="registry-tabs" role="tablist" aria-label="Tipo de cadastro"><button data-registry-tab="top" role="tab" aria-selected="true">Top Varejistas</button><button data-registry-tab="networks" role="tab" aria-selected="false">Grandes redes</button><button data-registry-tab="groups" role="tab" aria-selected="false">Agrupamentos</button><button data-registry-tab="representatives" role="tab" aria-selected="false">Representantes</button></div>
+      <div id="registry-notice" class="notice" role="status" hidden></div><div id="registry-content"></div>
+    </section>
+  </main>
+</div>
+<div id="toast" class="toast" role="status" hidden></div>
+<noscript><div class="noscript">Ative o JavaScript para usar o BI comercial.</div></noscript>
+<script src="js/demo-api.js"></script>
+<script src="js/core.bundle.js" defer></script>
+<script src="js/app.bundle.js" defer></script>
+<script src="js/experience.bundle.js" defer></script>
+</body></html>
