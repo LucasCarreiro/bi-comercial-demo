@@ -1,0 +1,79 @@
+/* Center all analytical KPI content; keep the decorative icon out of alignment. */
+.analysis-page .stats-grid>.stat-card{display:flex;flex-direction:column;justify-content:center;align-items:stretch;text-align:center}
+.analysis-page .stats-grid .stat-label{justify-content:center;align-items:center;position:relative;padding-inline:23px;min-height:24px;text-align:center}
+.analysis-page .stats-grid .stat-icon{position:absolute;right:0;top:0}
+.analysis-page .stats-grid .stat-value,.analysis-page .stats-grid .stat-foot{text-align:center}
+.analysis-page .stats-grid .comparison-value{align-items:center;text-align:center}
+.analysis-page .stats-grid .comparison-values{text-align:center}
+.same-month-comparison{display:grid;justify-items:center;gap:4px;border-top:1px solid #e5eaf3;margin-top:12px;padding-top:11px}
+.same-month-comparison>span{font-size:11px;color:#7d89a0;line-height:1.4}
+.same-month-comparison>strong{font-size:20px;font-weight:730;color:var(--navy);letter-spacing:-.5px;line-height:1.3;font-variant-numeric:tabular-nums}
+.same-month-comparison>small{font-size:9px;line-height:1.5;color:#939db0}
+.analysis-toolbar{flex-wrap:wrap}.analysis-toolbar #analysis-print{white-space:nowrap}
+.dual-print-root{display:none!important}
+@media print{
+ @page{size:A4 landscape;margin:10mm}
+ body.dual-print-active{background:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ body.dual-print-active> :not(#dual-print-root){display:none!important}
+ body.dual-print-active #dual-print-root{display:block!important;color:#232b45;background:white;font:10px/1.45 "Segoe UI",system-ui,sans-serif}
+ #dual-print-root .dual-print-sheet{break-before:page;page-break-before:always}
+ #dual-print-root .dual-print-sheet:first-child{break-before:auto;page-break-before:auto}
+ #dual-print-root .dual-print-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:2px solid #0f766e;padding:0 0 9px;margin-bottom:13px;break-after:avoid}
+ #dual-print-root .dual-print-heading>span{font-size:9px;color:#7b8295;white-space:nowrap}
+ #dual-print-root .dual-print-heading>h1{font-size:17px;text-align:center;flex:1;margin:0;color:#15183e}
+ #dual-print-root .dual-print-heading>strong{font-size:14px;color:#0f766e;white-space:nowrap}
+ #dual-print-root .dual-print-reference{font-size:9px;margin:5px 0 12px;color:#7b8295}
+ #dual-print-root .stats-grid{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:9px;margin:0 0 14px}
+ #dual-print-root .stats-grid.year-closed{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+ #dual-print-root .stat-card{display:flex;flex-direction:column;justify-content:center;text-align:center;padding:12px 9px;min-height:110px;break-inside:avoid;box-shadow:none}
+ #dual-print-root .comparison-card{grid-column:span 2}
+ #dual-print-root .stat-label{font-size:10px;justify-content:center;gap:5px}
+ #dual-print-root .stat-icon{display:none}
+ #dual-print-root .stat-value{font-size:19px;margin:8px 0 4px;line-height:1.3;text-align:center}
+ #dual-print-root .stat-foot{font-size:8px;text-align:center}
+ #dual-print-root .comparison-value{align-items:center}
+ #dual-print-root .comparison-value>span{font-size:9px}
+ #dual-print-root .comparison-value>strong{font-size:19px}
+ #dual-print-root .same-month-comparison{margin-top:8px;padding-top:7px;gap:3px}
+ #dual-print-root .same-month-comparison>span{font-size:9px}
+ #dual-print-root .same-month-comparison>strong{font-size:16px}
+ #dual-print-root .same-month-comparison>small{font-size:8px}
+ #dual-print-root .analysis-grid{display:grid!important;grid-template-columns:minmax(0,1.8fr) minmax(220px,1fr)!important;gap:13px;margin-bottom:15px;break-inside:avoid}
+ #dual-print-root .panel-heading{padding:12px 13px 9px}
+ #dual-print-root .panel-heading h3{font-size:12px}
+ #dual-print-root .panel-heading p{font-size:9px}
+ #dual-print-root .chart-container{overflow:visible;padding:0 10px 8px}
+ #dual-print-root .line-chart{width:100%;min-width:0;max-width:100%;height:auto}
+ #dual-print-root .chart-legend{padding-bottom:9px;font-size:9px;gap:13px}
+ #dual-print-root .panel{box-shadow:none;overflow:visible}
+ #dual-print-root .mix-body-stacked{flex-direction:column;padding:0 12px 12px;gap:9px}
+ #dual-print-root .mix-donut-wrap,#dual-print-root .donut{width:145px!important;height:145px!important}
+ #dual-print-root .mix-items{width:100%;grid-template-columns:repeat(var(--mix-count,3),minmax(0,1fr))!important;gap:5px}
+ #dual-print-root .mix-item{padding:7px 4px!important}
+ #dual-print-root .mix-item>div{font-size:10px;flex-direction:column;gap:4px}
+ #dual-print-root .mix-item>div>span{font-size:8px}
+ #dual-print-root .mix-item strong{font-size:13px}
+ #dual-print-root .mix-item p{font-size:8px;margin:4px 0 0}
+ #dual-print-root .mix-donut-center strong{font-size:16px}
+ #dual-print-root .mix-donut-center span{font-size:8px}
+ #dual-print-root .table-wrap{overflow:visible}
+ #dual-print-root table{width:100%;min-width:0!important;font-size:9px}
+ #dual-print-root th,#dual-print-root td{text-align:center!important;vertical-align:middle;padding:8px 7px}
+ #dual-print-root th{font-size:8px;letter-spacing:.2px;white-space:normal}
+ #dual-print-root td.number{white-space:nowrap}
+ #dual-print-root thead{display:table-header-group}
+ #dual-print-root tr{break-inside:avoid}
+ #dual-print-root .client-cell{font-size:9px}
+ #dual-print-root .client-cell small{font-size:8px}
+ #dual-print-root .client-button{display:block;text-align:center;font:inherit;font-weight:650;background:none;border:0;padding:0}
+ #dual-print-root .mini-mix,#dual-print-root .mix-percentages{min-width:0;gap:4px}
+ #dual-print-root .mix-percentage{padding:4px!important;min-width:0}
+ #dual-print-root .mix-category{font-size:7px!important}
+ #dual-print-root .mix-share{font-size:9px!important}
+ #dual-print-root .table-footer{font-size:8px;padding:8px}
+ #dual-print-root .customer-report-sheet{max-width:none!important}
+ #dual-print-root .customer-report-stats{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ #dual-print-root .customer-report-header{break-inside:avoid}
+ #dual-print-root .customer-report-actions,#dual-print-root .no-customer-print,#dual-print-root .chart-hit,#dual-print-root .chart-tooltip{display:none!important}
+ #dual-print-root *{animation:none!important;transition:none!important}
+}

@@ -1,0 +1,49 @@
+/* Shared progressive polish. No layout, data visibility or number formatting changes. */
+.bi-experience{--experience-ease:cubic-bezier(.2,.75,.2,1);--experience-outline:#6384c9;--experience-elevation:0 10px 28px rgba(26,47,88,.065);--experience-line:#e2e8f2;scrollbar-color:#c5cfdf transparent}
+.bi-experience body{background-image:radial-gradient(ellipse at 12% 0,rgba(220,229,246,.24),transparent 44%);background-attachment:fixed}
+.bi-experience .topbar{box-shadow:0 2px 14px rgba(20,35,72,.025)}
+.bi-experience .panel,.bi-experience .stat-card,.bi-experience .kpi,.bi-experience .connection-tools{border-color:var(--experience-line);box-shadow:0 3px 16px rgba(25,45,83,.028);transition:border-color .24s var(--experience-ease),box-shadow .24s var(--experience-ease)}
+.bi-experience .panel:focus-within{border-color:#c4d2eb;box-shadow:0 6px 24px rgba(32,57,102,.055)}
+.bi-experience .panel-heading,.bi-experience .panel-head{background-image:linear-gradient(115deg,rgba(246,249,254,.60),transparent 75%)}
+.bi-experience .nav-item{transition:background .22s var(--experience-ease),color .22s var(--experience-ease),box-shadow .22s var(--experience-ease),transform .22s var(--experience-ease)}
+.bi-experience .nav-item.active{box-shadow:0 6px 18px rgba(5,10,30,.18),inset 0 1px 0 rgba(255,255,255,.10)}
+.bi-experience .nav-icon{transition:transform .22s var(--experience-ease),color .22s var(--experience-ease)}
+.bi-experience .button,.bi-experience .tabs button,.bi-experience .seg button,.bi-experience .registry-tabs button,.bi-experience .unit-toggle{transition:background .2s var(--experience-ease),border-color .2s var(--experience-ease),box-shadow .2s var(--experience-ease),transform .2s var(--experience-ease),color .2s var(--experience-ease)}
+.bi-experience .button-primary{box-shadow:0 4px 12px rgba(21,24,62,.14),inset 0 1px 0 rgba(255,255,255,.07)}
+.bi-experience button:active:not(:disabled),.bi-experience a.button:active{transform:translateY(0) scale(.985)}
+.bi-experience button:focus-visible,.bi-experience a:focus-visible,.bi-experience [role="button"]:focus-visible{outline:3px solid rgba(99,132,201,.7);outline-offset:3px}
+.bi-experience input,.bi-experience select,.bi-experience textarea{transition:border-color .2s var(--experience-ease),background .2s var(--experience-ease),box-shadow .2s var(--experience-ease)}
+.bi-experience input:focus,.bi-experience select:focus,.bi-experience textarea:focus{border-color:var(--experience-outline);box-shadow:0 0 0 3px rgba(99,132,201,.09)}
+.bi-experience .search-wrap{transition:border-color .2s,box-shadow .2s;background:#fff}
+.bi-experience .search-wrap:focus-within{border-color:#a9bde1;box-shadow:0 0 0 3px rgba(99,132,201,.07)}
+.bi-experience tbody tr{transition:background-color .18s var(--experience-ease)}
+.bi-experience tbody tr[role="button"]:focus-visible,.bi-experience tbody tr[data-recovery-code]:focus-visible{outline:2px solid #6b8ece;outline-offset:-2px;background:#f1f5fd}
+.bi-experience .rep-option,.bi-experience .city-item{transition:background .2s,border-color .2s,box-shadow .2s}
+.bi-experience .rep-option.selected{box-shadow:inset 3px 0 0 #5c7fc1;background:#edf3fe}
+.bi-experience .rep-map-city path,.bi-experience .municipality-shape{transition:fill .18s,stroke .18s,stroke-width .18s}
+.bi-experience .rep-map-city.is-selected path,.bi-experience .municipality[aria-pressed="true"] .municipality-shape{filter:drop-shadow(0 1px 2px rgba(30,48,82,.19))}
+.bi-experience [data-chart-point]:hover circle,.bi-experience [data-chart-point]:focus-visible circle{filter:brightness(.9) drop-shadow(0 1px 2px rgba(35,60,102,.2))}
+.bi-experience .experience-pressable{position:relative;isolation:isolate;overflow:hidden}
+.bi-experience .experience-ink{display:block;position:absolute;z-index:0;border-radius:50%;background:currentColor;pointer-events:none;opacity:0;transform-origin:center;user-select:none}
+.bi-experience .notice,.bi-experience .loading-panel{box-shadow:0 3px 14px rgba(40,53,86,.025)}
+.bi-experience .status-chip,.bi-experience .connection-status{box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
+@media(max-width:900px){.bi-experience body{background-attachment:scroll}}
+@media(hover:hover) and (pointer:fine){
+ .bi-experience .stat-card:hover,.bi-experience .kpi:hover{box-shadow:var(--experience-elevation);border-color:#d0dbed}
+ .bi-experience .nav-item:hover{transform:translateX(2px)}
+ .bi-experience .nav-item:hover .nav-icon{transform:translateY(-1px)}
+ .bi-experience .button:hover:not(:disabled),.bi-experience .tabs button:hover:not(:disabled),.bi-experience .seg button:hover:not(:disabled){box-shadow:0 5px 16px rgba(27,43,80,.09);transform:translateY(-1px)}
+ .bi-experience .button-light:hover{background:#f8faff;border-color:#bdcbe3}
+ .bi-experience tbody tr:hover{background-color:#f4f7fd}
+ .bi-experience .city-item:hover{background:#f1f5fc}
+}
+@media(prefers-reduced-motion:reduce){
+ .bi-experience *,.bi-experience *::before,.bi-experience *::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+ .bi-experience .experience-ink{display:none!important}
+ .bi-experience .nav-item:hover,.bi-experience button:hover,.bi-experience button:active{transform:none!important}
+}
+@media print{
+ .bi-experience body{background-image:none!important}
+ .bi-experience .experience-ink{display:none!important}
+ .bi-experience *,.bi-experience *::before,.bi-experience *::after{animation:none!important;transition:none!important;box-shadow:none!important;filter:none!important}
+}
