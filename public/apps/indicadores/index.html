@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'">
+  <title>Indicadores</title><link rel="stylesheet" href="report.css">
+<link rel="stylesheet" href="../../css/experience.css"></head>
+<body>
+<main>
+  <header class="report-heading"><div><h1>Indicadores</h1><p id="source-period">Dados fictícios</p></div></header>
+  <form id="filters" class="filters" aria-label="Filtros do relatório">
+    <label>Início<input id="date-start" type="date" required></label><label>Fim<input id="date-end" type="date" required></label>
+    <label>Grupo<select id="group"><option value="all">Todos os grupos</option><option value="Redes">Redes</option><option value="Representantes">Representantes</option></select></label>
+    <label class="rep-field">Vendedor<select id="representative"><option value="all">Todos os vendedores</option></select></label>
+    <div class="filter-actions"><button id="apply-filters" class="button primary" type="submit">Aplicar</button><button id="clear-filters" class="button secondary" type="button">Limpar filtro</button></div>
+  </form>
+  <p id="filter-error" class="notice error" role="alert" hidden></p>
+  <div class="report-toolbar"><nav class="tabs" aria-label="Visão do relatório"><button class="active" type="button" data-report-view="overview" aria-pressed="true">Redes × Representantes</button><button type="button" data-report-view="ranking" aria-pressed="false">Ranking</button><button type="button" data-report-view="orders" aria-pressed="false">Pedidos</button></nav><button id="metric-toggle" class="metric-toggle" type="button" aria-label="Alternar entre reais e fardos" aria-pressed="true"><span data-metric="sales">R$</span><b aria-hidden="true">⇆</b><span class="chosen" data-metric="fardos">Fardos</span></button></div>
+  <div id="report-content" aria-live="polite"></div>
+  <footer><span id="source-updated"></span><span>Redes: VENDA DIRETA (7) e VENDA DIRETA ATACADO (12). Demais vendedores: Representantes.</span><span>R$: arroz, flocão e salgadinho. Fardos: todos os produtos, inclusive Outros (mesma regra da planilha original). Pedidos: visão Pedidos.</span></footer>
+</main>
+<div id="chart-tooltip" class="tooltip" role="status" hidden></div>
+<noscript><p>Ative o JavaScript para visualizar o relatório.</p></noscript>
+<script src="../../js/demo-api.js"></script><script src="../../js/core.bundle.js" defer></script><script src="report-model.js" defer></script><script src="report.js" defer></script>
+<script src="../../js/experience.bundle.js" defer></script>
+</body></html>
