@@ -1,0 +1,272 @@
+{
+ "schemaVersion": 1,
+ "revision": 1,
+ "updatedAt": "2026-01-05T12:00:00Z",
+ "goals": [
+  {
+   "id": "goal-top-1-2026-09",
+   "topRetailerId": "top-1",
+   "month": "2026-09",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 82,
+    "Flocão": 34,
+    "Salgadinho": 36
+   }
+  },
+  {
+   "id": "goal-top-1-2026-10",
+   "topRetailerId": "top-1",
+   "month": "2026-10",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 90,
+    "Flocão": 38,
+    "Salgadinho": 39
+   }
+  },
+  {
+   "id": "goal-top-1-2026-11",
+   "topRetailerId": "top-1",
+   "month": "2026-11",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 98,
+    "Flocão": 41,
+    "Salgadinho": 43
+   }
+  },
+  {
+   "id": "goal-top-2-2026-09",
+   "topRetailerId": "top-2",
+   "month": "2026-09",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 138,
+    "Flocão": 46,
+    "Salgadinho": 77
+   }
+  },
+  {
+   "id": "goal-top-2-2026-10",
+   "topRetailerId": "top-2",
+   "month": "2026-10",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 151,
+    "Flocão": 51,
+    "Salgadinho": 85
+   }
+  },
+  {
+   "id": "goal-top-2-2026-11",
+   "topRetailerId": "top-2",
+   "month": "2026-11",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 165,
+    "Flocão": 56,
+    "Salgadinho": 92
+   }
+  },
+  {
+   "id": "goal-top-3-2026-09",
+   "topRetailerId": "top-3",
+   "month": "2026-09",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 154,
+    "Flocão": 51,
+    "Salgadinho": 0
+   }
+  },
+  {
+   "id": "goal-top-3-2026-10",
+   "topRetailerId": "top-3",
+   "month": "2026-10",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 170,
+    "Flocão": 56,
+    "Salgadinho": 0
+   }
+  },
+  {
+   "id": "goal-top-3-2026-11",
+   "topRetailerId": "top-3",
+   "month": "2026-11",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 185,
+    "Flocão": 61,
+    "Salgadinho": 0
+   }
+  },
+  {
+   "id": "goal-top-4-2026-09",
+   "topRetailerId": "top-4",
+   "month": "2026-09",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 83,
+    "Flocão": 29,
+    "Salgadinho": 30
+   }
+  },
+  {
+   "id": "goal-top-4-2026-10",
+   "topRetailerId": "top-4",
+   "month": "2026-10",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 92,
+    "Flocão": 31,
+    "Salgadinho": 33
+   }
+  },
+  {
+   "id": "goal-top-4-2026-11",
+   "topRetailerId": "top-4",
+   "month": "2026-11",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 100,
+    "Flocão": 34,
+    "Salgadinho": 36
+   }
+  },
+  {
+   "id": "goal-top-5-2026-09",
+   "topRetailerId": "top-5",
+   "month": "2026-09",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 218,
+    "Flocão": 46,
+    "Salgadinho": 0
+   }
+  },
+  {
+   "id": "goal-top-5-2026-10",
+   "topRetailerId": "top-5",
+   "month": "2026-10",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 240,
+    "Flocão": 51,
+    "Salgadinho": 0
+   }
+  },
+  {
+   "id": "goal-top-5-2026-11",
+   "topRetailerId": "top-5",
+   "month": "2026-11",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 262,
+    "Flocão": 55,
+    "Salgadinho": 0
+   }
+  },
+  {
+   "id": "goal-top-6-2026-09",
+   "topRetailerId": "top-6",
+   "month": "2026-09",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 71,
+    "Flocão": 33,
+    "Salgadinho": 0
+   }
+  },
+  {
+   "id": "goal-top-6-2026-10",
+   "topRetailerId": "top-6",
+   "month": "2026-10",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 79,
+    "Flocão": 36,
+    "Salgadinho": 0
+   }
+  },
+  {
+   "id": "goal-top-6-2026-11",
+   "topRetailerId": "top-6",
+   "month": "2026-11",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 86,
+    "Flocão": 39,
+    "Salgadinho": 0
+   }
+  },
+  {
+   "id": "goal-top-7-2026-09",
+   "topRetailerId": "top-7",
+   "month": "2026-09",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 187,
+    "Flocão": 0,
+    "Salgadinho": 60
+   }
+  },
+  {
+   "id": "goal-top-7-2026-10",
+   "topRetailerId": "top-7",
+   "month": "2026-10",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 205,
+    "Flocão": 0,
+    "Salgadinho": 65
+   }
+  },
+  {
+   "id": "goal-top-7-2026-11",
+   "topRetailerId": "top-7",
+   "month": "2026-11",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 224,
+    "Flocão": 0,
+    "Salgadinho": 71
+   }
+  },
+  {
+   "id": "goal-top-8-2026-09",
+   "topRetailerId": "top-8",
+   "month": "2026-09",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 198,
+    "Flocão": 33,
+    "Salgadinho": 59
+   }
+  },
+  {
+   "id": "goal-top-8-2026-10",
+   "topRetailerId": "top-8",
+   "month": "2026-10",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 218,
+    "Flocão": 37,
+    "Salgadinho": 64
+   }
+  },
+  {
+   "id": "goal-top-8-2026-11",
+   "topRetailerId": "top-8",
+   "month": "2026-11",
+   "metric": "fardos",
+   "categories": {
+    "Arroz": 238,
+    "Flocão": 40,
+    "Salgadinho": 70
+   }
+  }
+ ],
+ "clientCatalog": null
+}

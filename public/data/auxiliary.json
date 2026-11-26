@@ -1,0 +1,235 @@
+{
+ "schemaVersion": 1,
+ "revision": 1,
+ "updatedAt": "2026-01-05T12:00:00Z",
+ "topRetailers": [
+  {
+   "id": "top-1",
+   "name": "MERCEARIA HORIZONTE LTDA ME",
+   "clientCodes": [
+    "117"
+   ],
+   "city": "PARNAÍBA / PI",
+   "rep": "BRUNO CESAR LOPES",
+   "acceptedAt": "2026-02-02",
+   "notes": "Participante de exemplo (dados fictícios)."
+  },
+  {
+   "id": "top-2",
+   "name": "SUPERMERCADO BOA SAFRA LTDA ME",
+   "clientCodes": [
+    "128"
+   ],
+   "city": "CAMPO MAIOR / PI",
+   "rep": "RENATA DIAS",
+   "acceptedAt": "2026-02-13",
+   "notes": ""
+  },
+  {
+   "id": "top-3",
+   "name": "PANIFICADORA CENTRAL LTDA",
+   "clientCodes": [
+    "152"
+   ],
+   "city": "TERESINA / PI",
+   "rep": "ANA PAULA MOREIRA",
+   "acceptedAt": "2026-02-24",
+   "notes": ""
+  },
+  {
+   "id": "top-4",
+   "name": "PANIFICADORA SOL NASCENTE",
+   "clientCodes": [
+    "182"
+   ],
+   "city": "PALMAS / TO",
+   "rep": "LARISSA FONTES",
+   "acceptedAt": "2026-03-07",
+   "notes": ""
+  },
+  {
+   "id": "top-5",
+   "name": "PANIFICADORA NORDESTAO LTDA ME",
+   "clientCodes": [
+    "197"
+   ],
+   "city": "ESPERANTINA / PI",
+   "rep": "KLEBER ARAUJO",
+   "acceptedAt": "2026-03-18",
+   "notes": ""
+  },
+  {
+   "id": "top-6",
+   "name": "EMPORIO SOL NASCENTE LTDA",
+   "clientCodes": [
+    "295"
+   ],
+   "city": "ARARIPINA / PE",
+   "rep": "NATALIA REIS REPRESENTACOES LTDA",
+   "acceptedAt": "2026-03-29",
+   "notes": ""
+  },
+  {
+   "id": "top-7",
+   "name": "EMPORIO FAMILIA ME",
+   "clientCodes": [
+    "320"
+   ],
+   "city": "IMPERATRIZ / MA",
+   "rep": "IGOR MENDES",
+   "acceptedAt": "2026-04-09",
+   "notes": ""
+  },
+  {
+   "id": "top-8",
+   "name": "MERCEARIA JATOBA EIRELI",
+   "clientCodes": [
+    "344"
+   ],
+   "city": "BACABAL / MA",
+   "rep": "HELENA BARROS",
+   "acceptedAt": "2026-04-20",
+   "notes": ""
+  }
+ ],
+ "largeNetworks": [
+  {
+   "id": "net-alfa",
+   "name": "Rede Alfa",
+   "clientCodes": [
+    "244",
+    "353",
+    "1580",
+    "1651",
+    "533",
+    "1775",
+    "1670",
+    "1821"
+   ],
+   "namePatterns": [
+    "^ALFA SUPERMERCADOS (?:SA|S A)(?: |$)"
+   ],
+   "excludedClientCodes": []
+  },
+  {
+   "id": "net-beta",
+   "name": "Atacarejo Beta",
+   "clientCodes": [
+    "374",
+    "1484",
+    "770",
+    "1091",
+    "214"
+   ],
+   "namePatterns": [
+    "^BETA ATACAREJO LTDA(?: |$)"
+   ],
+   "excludedClientCodes": []
+  },
+  {
+   "id": "net-gama",
+   "name": "Rede Gama",
+   "clientCodes": [
+    "114",
+    "2293",
+    "1814",
+    "1727",
+    "314"
+   ],
+   "namePatterns": [
+    "^(?:GAMA ATACADISTA|FARMACIAS GAMAFARMA) LTDA(?: |$)"
+   ],
+   "excludedClientCodes": []
+  },
+  {
+   "id": "net-delta",
+   "name": "Delta Distribuição",
+   "clientCodes": [
+    "2364",
+    "2116"
+   ],
+   "namePatterns": [
+    "^DELTA DISTRIBUICAO DE ALIMENTOS(?: (?:SA|S A))?$"
+   ],
+   "excludedClientCodes": []
+  },
+  {
+   "id": "net-omega",
+   "name": "Ômega Atacado",
+   "clientCodes": [
+    "1874",
+    "693",
+    "2053",
+    "1565"
+   ],
+   "namePatterns": [
+    "^OMEGA ATACADO (?:SA|S A)(?: |$)"
+   ],
+   "excludedClientCodes": []
+  },
+  {
+   "id": "net-sigma",
+   "name": "Sigma Clube",
+   "clientCodes": [
+    "944",
+    "1690",
+    "1098"
+   ],
+   "namePatterns": [
+    "^SIGMA CLUBE DE COMPRAS LTDA(?: |$)"
+   ],
+   "excludedClientCodes": []
+  }
+ ],
+ "clientGroups": [
+  {
+   "id": "grp-sol",
+   "name": "Mercado Sol",
+   "clientCodes": [
+    "386",
+    "1958"
+   ],
+   "namePatterns": [
+    "^(?:MERCADO SOL LTDA|SOL E LUA MERCADINHO LTDA ME)$"
+   ]
+  },
+  {
+   "id": "grp-vale",
+   "name": "Vale Verde",
+   "clientCodes": [
+    "1213",
+    "2226"
+   ],
+   "namePatterns": [
+    "^(?:MERCANTIL VALE VERDE|VALE VERDE ATACADO) LTDA$"
+   ]
+  }
+ ],
+ "representativeAliases": [
+  {
+   "code": "1",
+   "alias": "Ana Paula"
+  },
+  {
+   "code": "27",
+   "alias": "Eduardo"
+  },
+  {
+   "code": "96",
+   "alias": "Natália"
+  },
+  {
+   "code": "29",
+   "alias": "Fernanda"
+  },
+  {
+   "code": "110",
+   "alias": "Otávio"
+  }
+ ],
+ "independentClientCodes": [],
+ "independentNames": [
+  "JOAO ALFA DOS SANTOS",
+  "MARIA ALFA NOGUEIRA"
+ ]
+}
